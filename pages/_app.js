@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import { UserProvider } from '@supabase/supabase-auth-helpers/react'
+import { supabaseClient } from '@supabase/supabase-auth-helpers/nextjs'
+import './../style.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={'dark'}>
+      <UserProvider supabaseClient={supabaseClient}>
+        <Component {...pageProps} />
+      </UserProvider>
+    </main>
+  )
 }
-
-export default MyApp
