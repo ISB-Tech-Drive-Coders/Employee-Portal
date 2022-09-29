@@ -4,7 +4,8 @@ export default function Protected({ user }) {
   console.log({ user })
   return (
     <div style={{ maxWidth: '420px', margin: '96px auto' }}>
-      <h2>Employee Only page </h2>
+      <h1>Welcome to the ISBSEG Volunteer Page</h1>
+      <a href="/pages/videochat.js"><h3>ISBSEG Video Chat</h3></a>
     </div>
   )
 }

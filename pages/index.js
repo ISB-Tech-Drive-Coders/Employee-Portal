@@ -4,10 +4,10 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          ISB Student Electronics Group
+          ISBSEG
         </h1>
         <p>
-          Welcome to the employee portal!
+          Welcome to the volunteer portal!
         </p>
        </main>
     </div>
