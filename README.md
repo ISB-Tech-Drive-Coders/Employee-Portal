@@ -1,14 +1,5 @@
-## Magic Link Authentication and Route Controls with Supabase and Next.js
+# ISB Student Electronics Group Staff Login
 
-To run this project, To get started with this project, first create a new project in the [Supabase](https://supabase.io/) dashboard
-
-Once you've created the project in the Supabase dashboard, continue with the next steps.
-
-## Run either locally or deploy to Vercel
-
-### Deploying to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdabit3%2Fsupabase-nextjs-auth&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=API%20URL%20and%20API%20Key)
 
 ### Running locally
 
