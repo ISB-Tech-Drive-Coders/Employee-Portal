@@ -4,10 +4,10 @@ export default function Protected({ user }) {
   console.log({ user })
   return (
     <div>
-      <div style={{ maxWidth: '420px', margin: '96px auto' }}>
-      <h1>Welcome to the ISBSEG Volunteer Page</h1>
+      <div style={{ maxWidth: '500px', margin: '96px auto' }}>
+      <h1>Home</h1>
       </div>
-      <div className="text-blue">
+      <div style={{ maxWidth: '300px', marign: '96px auto' }}>
       <a href="/pages/videochat.js"><h3>Conferencing </h3></a>
       </div>
     </div>
@@ -18,7 +18,7 @@ export async function getServerSideProps({ req }) {
   const { user } = await supabase.auth.api.getUserByCookie(req)
 
   if (!user) {
-    return { props: {}, redirect: { destination: '/sign-in' } }
+    return { props: {}, redirect: { destination: '/' } }
   }
 
   return { props: { user } }

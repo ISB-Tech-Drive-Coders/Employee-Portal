@@ -48,14 +48,23 @@ function MyApp({ Component, pageProps }) {
         </Link>
         {
           authenticatedState === 'not-authenticated' && (
-            <Link href="/sign-in">
+            <Link href="/">
               <a style={linkStyle}>Sign In</a>
             </Link>
           )
         }
-        <Link href="/protected">
-          <a style={linkStyle}>Protected</a>
-        </Link>
+        {
+          authenticatedState === 'authenticated' && (
+            <div>
+            <Link href="/protected">
+              <a style={linkStyle}>Sign In</a>
+            </Link>
+            <Link href="/protected">
+              <a style={linkStyle}>Sign In</a>
+            </Link>
+            </div>
+          )
+        }
       </nav>
       <Component {...pageProps} />
     </div>

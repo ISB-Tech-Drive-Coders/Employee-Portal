@@ -1,14 +1,40 @@
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
-export default function Home() {
+
+import { supabase } from '../client'
+
+export default function SignIn() {
+  const [email, setEmail] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+  async function signIn() {
+    const { error, data } = await supabase.auth.signIn({
+      email
+    })
+    if (error) {
+      console.log({ error })
+    } else {
+      setSubmitted(true)
+    }
+  }
+  if (submitted) {
+    return (
+      <div className={styles.container}>
+        <h1>Please check your email to sign in</h1>
+      </div>
+    )
+  }
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          ISBSEG
+          Sign In
         </h1>
-        <p>
-          Welcome to the volunteer portal!
-        </p>
+        <input
+          onChange={e => setEmail(e.target.value)}
+          style={{ margin: 10 }}
+        />
+        <button onClick={() => signIn()}>Sign In</button>
+        <a href="/signup"><h3>Sign Up</h3></a>
        </main>
     </div>
   )

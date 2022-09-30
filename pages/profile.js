@@ -20,14 +20,14 @@ export default function Profile() {
     const profileData = await supabase.auth.user()
     console.log("profileData: ", profileData)
     if (!profileData) {
-      router.push('/sign-in')
+      router.push('/')
     } else {
       setProfile(profileData)
     }
   }
   async function signOut() {
     await supabase.auth.signOut()
-    router.push('/sign-in')
+    router.push('/')
   }
   if (!profile) return null
   return (
