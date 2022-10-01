@@ -1,10 +1,10 @@
 import { supabase } from '../client'
 
-export default function videochat({ user }) {
+export default function mainmail({ user }) {
   console.log({ user })
   return (
     <div>
-      <h1>video page</h1>
+      <h1>ISBtechdrive@hotmail.com MailBox Embed/h1>
     </div>
   )
 }

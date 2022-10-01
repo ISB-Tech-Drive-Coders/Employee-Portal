@@ -8,7 +8,7 @@ export default function Protected({ user }) {
       <h1>Home</h1>
       </div>
       <div style={{ maxWidth: '300px', marign: '96px auto' }}>
-      <a href="/pages/videochat.js"><h3>Conferencing </h3></a>
+      <a href="/pages/mainmail.js"><h3>Main Mail </h3></a>
       </div>
     </div>
   )
