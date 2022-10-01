@@ -54,6 +54,14 @@ function MyApp({ Component, pageProps }) {
             </Link>
           )
         }
+        {
+          authenticatedState === 'authenticated' && (
+            <Link href="/mainmail">
+              <a style={linkStyle}>Main Mail</a>
+            </Link>
+          )
+          
+        }
       </nav>
       <Component {...pageProps} />
     </div>
