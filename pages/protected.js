@@ -8,7 +8,7 @@ export default function Protected({ user }) {
       <h1>Home</h1>
       </div>
       <div style={{ maxWidth: '300px', marign: '96px auto' }}>
-      <a href="/pages/mainmail"><h3>Main Mail </h3></a>
+      <a href="/events"><h3>Events </h3></a>
       </div>
     </div>
   )

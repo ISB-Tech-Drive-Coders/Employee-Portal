@@ -56,8 +56,8 @@ function MyApp({ Component, pageProps }) {
         }
         {
           authenticatedState === 'authenticated' && (
-            <Link href="/mainmail">
-              <a style={linkStyle}>Main Mail</a>
+            <Link href="/events">
+              <a style={linkStyle}>Events</a>
             </Link>
           )
           
