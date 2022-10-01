@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       handleAuthChange(event, session)
       if (event === 'SIGNED_IN') {
         setAuthenticatedState('authenticated')
-        router.push('/profile')
+        router.push('/protected')
       }
       if (event === 'SIGNED_OUT') {
         setAuthenticatedState('not-authenticated')
@@ -40,29 +40,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav style={navStyle}>
-        <Link href="/">
-          <a style={linkStyle}>Home</a>
-        </Link>
-        <Link href="/profile">
-          <a style={linkStyle}>Profile</a>
-        </Link>
-        {
-          authenticatedState === 'not-authenticated' && (
-            <Link href="/">
-              <a style={linkStyle}>Sign In</a>
+      {
+          authenticatedState === 'authenticated' && (
+            <Link href="/profile">
+              <a style={linkStyle}>Profile</a>
             </Link>
           )
         }
         {
           authenticatedState === 'authenticated' && (
-            <div>
             <Link href="/protected">
-              <a style={linkStyle}>Sign In</a>
+              <a style={linkStyle}>Home</a>
             </Link>
-            <Link href="/protected">
-              <a style={linkStyle}>Sign In</a>
-            </Link>
-            </div>
           )
         }
       </nav>
