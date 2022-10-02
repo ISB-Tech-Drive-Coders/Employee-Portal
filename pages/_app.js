@@ -42,8 +42,8 @@ function MyApp({ Component, pageProps }) {
       <nav style={navStyle}>
       {
           authenticatedState === 'authenticated' && (
-            <Link href="/profile">
-              <a style={linkStyle}>Profile</a>
+            <Link href="/protected">
+              <a style={linkStyle}>protected</a>
             </Link>
           )
         }
