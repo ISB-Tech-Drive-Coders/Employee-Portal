@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import styles from '../styles/Home.module.css'
+import { useState } from 'react';
+import styles from '../styles/Home.module.css';
 
 import { supabase } from '../client'
 
@@ -34,7 +34,7 @@ export default function SignIn() {
           style={{ margin: 10 }}
         />
         <button onClick={() => signIn()}>Sign In</button>
-        <a href="/signup"><h3>Sign Up</h3></a>
+        <link href="/signup"><h3>Sign Up</h3></link>
        </main>
     </div>
   )

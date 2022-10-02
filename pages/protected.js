@@ -1,4 +1,5 @@
-import { supabase } from '../client'
+import { supabase } from '../client';
+import Link from 'next/link';
 
 export default function Protected({ user }) {
   console.log({ user })
@@ -8,7 +9,7 @@ export default function Protected({ user }) {
       <h1>Home</h1>
       </div>
       <div style={{ maxWidth: '300px', marign: '96px auto' }}>
-      <a href="/events"><h3>Events </h3></a>
+      <Link href="/events"><h3>Events </h3></Link>
       </div>
     </div>
   )
