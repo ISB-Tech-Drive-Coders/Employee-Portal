@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     return () => {
       authListener.unsubscribe()
     }
-  }, [])
+  }, [router])
   async function checkUser() {
     const user = await supabase.auth.user()
     if (user) {
