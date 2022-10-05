@@ -8,7 +8,7 @@ export default function events({ user }) {
     <div>
       <h1>ISBSEG Events </h1>
       <div>
-        
+      <iframe src="https://outlook.live.com/owa/calendar/7afad185-3826-4b1b-bab7-ec3afbbf9f6d/50b4cc17-964f-4fa5-98ec-bc75d64cb11d/cid-3788AF48DE12EACF/index.html" width="1000px" height="700px"></iframe>
       </div>
     </div>
   )

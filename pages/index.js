@@ -35,7 +35,11 @@ export default function SignIn() {
           style={{ margin: 10 }}
         />
         <button onClick={() => signIn()}>Sign In</button>
-        <link href="/signup"><h3>Sign Up</h3></link>
+        <li>
+        <Link href="/signup">
+          <a>SignUp</a>
+        </Link>
+      </li>
        </main>
     </div>
   )
