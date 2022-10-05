@@ -14,6 +14,11 @@ export default function Protected({ user }) {
           <a>Events</a>
         </Link>
       </li>
+      <li>
+        <Link href="/news">
+          <a>Important News</a>
+        </Link>
+      </li>
       </div>
     </div>
   )
