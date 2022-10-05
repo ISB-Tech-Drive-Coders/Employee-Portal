@@ -40,13 +40,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav style={navStyle}>
-      {
-          authenticatedState === 'authenticated' && (
-            <Link href="/protected">
-              <a style={linkStyle}>protected</a>
-            </Link>
-          )
-        }
         {
           authenticatedState === 'authenticated' && (
             <Link href="/protected">
@@ -60,7 +53,20 @@ function MyApp({ Component, pageProps }) {
               <a style={linkStyle}>Events</a>
             </Link>
           )
-          
+        }
+        {
+          authenticatedState === 'authenticated' && (
+            <Link href="/calendar">
+              <a style={linkStyle}>Calendar</a>
+            </Link>
+          )
+        }
+         {
+          authenticatedState === 'authenticated' && (
+            <Link href="/news">
+              <a style={linkStyle}>News</a>
+            </Link>
+          )
         }
       </nav>
       <Component {...pageProps} />
