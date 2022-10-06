@@ -39,7 +39,11 @@ export default function SignIn() {
         <Link href="/signup">
           <a>SignUp</a>
         </Link>
-      </li>
+        <br></br>
+        <Link href="/passlogin">
+          <a>Password login</a>
+        </Link>
+        </li>
        </main>
     </div>
   )
