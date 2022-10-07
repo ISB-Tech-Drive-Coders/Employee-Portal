@@ -48,3 +48,11 @@ export default function SignIn() {
     </div>
   )
 }
+
+
+function signInWithGithub() {
+  /* authenticate with GitHub */
+  return  supabase.auth.signIn({
+          provider: 'github'
+  });
+}
