@@ -12,7 +12,7 @@ git clone https://github.com/dabit3/supabase-nextjs-auth
 #### 2. Change into the directory and install the dependencies
 
 ```sh
-cd supabase-nextjs-auth
+cd Volunteer-Portal
 
 npm install
 ```
