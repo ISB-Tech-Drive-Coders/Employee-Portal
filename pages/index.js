@@ -36,13 +36,9 @@ export default function SignIn() {
         />
         <button onClick={() => signIn()}>Sign In</button>
         <li>
-        <Link href="/signup">
-          <a>SignUp</a>
-        </Link>
-        <br></br>
-        <Link href="/passlogin">
-          <a>Password login</a>
-        </Link>
+          <Link href="/signup">
+            <a>SignUp</a>
+          </Link>
         </li>
        </main>
     </div>
