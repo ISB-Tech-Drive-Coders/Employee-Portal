@@ -6,7 +6,7 @@
 #### 1. Clone this project
 
 ```sh
-git clone https://github.com/dabit3/supabase-nextjs-auth
+git clone https://github.com/ISB-Tech-Drive-Coders/Volunteer-Portal
 ```
 
 #### 2. Change into the directory and install the dependencies
